@@ -1,0 +1,98 @@
+\documentclass{resume}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+}
+
+\usepackage{fontspec}
+
+\newcommand{\btab}[2]{
+  \bgroup
+  \def\arraystretch{#1}
+  \begin{tabular}{#2}
+}
+
+\newcommand{\etab}{
+  \end{tabular} \smallskip
+  \egroup
+}
+
+\name{Casey Megginson} % Your name
+\address{
+\href{mailto:cemeggin@gmail.com}{cemeggin@gmail.com} \\
+\href{http://github.com/cemegginson}{github.com/cemegginson}}
+
+\begin{document}
+\begin{rSection}{Education}
+  \item BS in Computer Science from the University of Arkansas at Little Rock
+  \item Associates in Computer Information Systems from College of the Ouachitas
+\end{rSection}
+
+\begin{rSection}{Areas of Expertise}
+  \btab{1.1}{ l l }
+    Languages: & C\slash{}C++, Java, Python, PHP, HTML, CSS, TypeScript,
+                 Javascript,  \\
+               & Haskell, SQL, \LaTeX{} \\
+    Libraries\slash{}Frameworks: & wxPython, PyQt, OpenGL, Angular 2 \\
+    Operating Systems: & Arch, Debian, \& Fedora based Linux, Windows \\
+    Tools: & CMake, Git, Subversion
+  \etab
+\end{rSection}
+
+\begin{rSection}{Relevant Experience}
+  % Molex
+  \begin{rSubsection}
+        {Molex}
+        {October 2016 - January 2017}
+        {Software Developer}{}{}
+    \item Rewrote an application for matching SMA cables based on their
+          electrical lengths, applying MVC principles in its design
+
+  \end{rSubsection}
+  % Emerging Analytics Center
+  \begin{rSubsection}
+        {Emerging Analytics Center}
+        {February 2015 - May 2015, August 2015 - May 2016}
+        {Student Researcher}{}{}
+    \item Worked on designing a CAVE (Computer Automated Virtual Environment)
+          in a box and the applications to run on it for use in education
+    \item Updated a set of Boost.Python bindings with a CMake build system
+          and updated the code so that it could be built on modern systems
+    \item Performed general management of the computers in the lab
+  \end{rSubsection}
+
+  % FIS
+  \begin{rSubsection}{FIS Global}{June 2015-August 2015}{Intern}{}{}
+    \item Automated a variety of tasks by writing Python scripts
+    \item Wrote a replacement for a report generator in Python and ensured that
+          its design was highly extensible
+  \end{rSubsection}
+
+  % AECC
+  \begin{rSubsection}
+        {Arkansas Electric Cooperative Corporation}
+        {June 2012 - August 2012}
+        {Intern}{}{}
+    \item Wrote an implementation of the algorithm used to determine the
+          allocation of electricity demand among power plants between AECC
+          and Entergy
+  \end{rSubsection}
+
+  % COTO
+  \begin{rSubsection}
+        {College of the Ouachitas}
+        {October 2010 - May 2012}
+        {CIS Lab Assistant}{}{}
+    \item Ensured the various labs were ready for all the classes
+    \item Assisted students with programming and software related questions
+    \item Experimented with a variety of tools to reduce the workload such
+          as Clonezilla
+    \item Replaced aging web portal for a group of classes with a new
+          hand-coded session management system build on a typical LAMP stack
+  \end{rSubsection}
+\end{rSection}
+
+\end{document}
